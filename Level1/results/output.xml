@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generator="Robot 3.1.1 (Jython 2.7.0 on java1.8.0_191)" generated="20191104 17:11:11.218">
+<suite source="/Users/shepp/git/Udemy_RobotFW_L1/Level1/tests/locator.robot" name="Locator" id="s1">
+<test name="Should be able to search for product" id="s1-t1">
+<kw name="Open Browser">
+<arguments>
+<arg>http://amazon.com</arg>
+<arg>gc</arg>
+</arguments>
+<msg level="FAIL" timestamp="20191104 17:11:11.449">No keyword with name 'Open Browser' found.</msg>
+<status endtime="20191104 17:11:11.450" starttime="20191104 17:11:11.447" status="FAIL"></status>
+</kw>
+<status critical="yes" endtime="20191104 17:11:11.453" starttime="20191104 17:11:11.430" status="FAIL">No keyword with name 'Open Browser' found.</status>
+</test>
+<status endtime="20191104 17:11:11.456" starttime="20191104 17:11:11.226" status="FAIL"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" name="Locator" id="s1">Locator</stat>
+</suite>
+</statistics>
+<errors>
+<msg level="ERROR" timestamp="20191104 17:11:11.421">Error in file '/Users/shepp/git/Udemy_RobotFW_L1/Level1/tests/locator.robot': Importing test library 'SeleniumLibrary' failed: ImportError: No module named SeleniumLibrary
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  /usr/local/bin
+  /Users/shepp/jython2.7.0/Lib/site-packages/robotframework-3.1.1-py2.7.egg
+  /Users/shepp/jython2.7.0/Lib
+  __classpath__
+  __pyclasspath__/
+  /Users/shepp/jython2.7.0/Lib/site-packages
+CLASSPATH:
+  /Users/shepp/jython2.7.0/jython.jar
+  .</msg>
+</errors>
+</robot>

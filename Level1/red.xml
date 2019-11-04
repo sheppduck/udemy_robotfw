@@ -2,7 +2,11 @@
 <projectConfiguration>
     <configVersion>2</configVersion>
     <relativeTo>WORKSPACE</relativeTo>
-    <pythonpath/>
+    <referencedLibrary type="PYTHON" name="SeleniumLibrary" path="/Users/shepp/my_robot_sandbox/lib/python3.6/site-packages/SeleniumLibrary/__init__.py" dynamic="false"/>
+    <pythonpath>
+        <path location="/Users/shepp/my_robot_sandbox/lib/python3.6/site-packages/SeleniumLibrary"/>
+        <path location="/Users/shepp/my_robot_sandbox/lib/python3.6/site-packages/"/>
+    </pythonpath>
     <classpath/>
     <excludedForValidation/>
     <isValidatedFileSizeCheckingEnabled>true</isValidatedFileSizeCheckingEnabled>

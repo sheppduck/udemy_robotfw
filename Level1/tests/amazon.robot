@@ -1,7 +1,12 @@
 *** Settings ***
 Documentation  New Test about locators on a webpage
-Resource  ../resources/Amazon.robot
-Resource  ../resources/Common.robot
+Resource  ../resources/PO/Cart.robot
+Resource  ../resources/PO/Landingpage.robot
+Resource  ../resources/PO/Product.robot
+Resource  ../resources/PO/SearchResults.robot
+Resource  ../resources/PO/SignIn.robot
+Resource  ../resources/PO/TopNav.robot
+
 Test Setup  Begin Web Test
 Test Teardown  End Web test
 

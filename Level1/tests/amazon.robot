@@ -6,6 +6,8 @@ Resource  ../resources/PO/Product.robot
 Resource  ../resources/PO/SearchResults.robot
 Resource  ../resources/PO/SignIn.robot
 Resource  ../resources/PO/TopNav.robot
+Resource  ../resources/AmazonKW.robot
+Resource  ../resources/CommonKW.robot
 
 Test Setup  Begin Web Test
 Test Teardown  End Web test
@@ -14,16 +16,20 @@ Test Teardown  End Web test
 
 
 *** Test Cases ***
-User can search for products
-    [Documentation]  This tests searching only nothing else
+Search for products
+    [Documentation]  Search for Products
     [Tags]  Smoke
-    Amazon.Search for products
-
-User Must Sign in to Checkout
+    AmazonKW.Search for products
+Select Product from Search Results
+    [Documentation]  This will select a product from search results
+    [Tags]  Smoke
+    AmazonKW.Select Product from Search Results
+Add product cart
+    [Documentation]  Add to cart
+    [Tags]  Smoke
+    AmazonKW.Add product cart
+Begin Checkout
     [Documentation]  Basic test to add a thing to cart and verify must sign in to checkout
     [Tags]  Smoke
-    Amazon.Search for products
-    Amazon.Select Product from Search Results
-    Amazon.Add product to the cart
-    Amazon.Begin Checkout
+    AmazonKW.Begin Checkout
 

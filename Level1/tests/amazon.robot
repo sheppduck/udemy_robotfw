@@ -1,11 +1,5 @@
 *** Settings ***
 Documentation  New Test about locators on a webpage
-Resource  ../resources/PO/Cart.robot
-Resource  ../resources/PO/Landingpage.robot
-Resource  ../resources/PO/Product.robot
-Resource  ../resources/PO/SearchResults.robot
-Resource  ../resources/PO/SignIn.robot
-Resource  ../resources/PO/TopNav.robot
 Resource  ../resources/AmazonKW.robot
 Resource  ../resources/CommonKW.robot
 
@@ -13,8 +7,12 @@ Test Setup  Begin Web Test
 Test Teardown  End Web test
 
 *** Variables ***
-
-
+# Browser
+${BROWSER} =  gc
+# URL
+${START_URL} =  https://amazon.com
+# Search Term
+${SEARCH_TERM} =  Maisto 1:24 Scale Assembly Line Ferrari 458 Italia
 *** Test Cases ***
 Search for products
     [Documentation]  Search for Products

@@ -8,7 +8,7 @@ Search for Products
     Submit Search
 
 Enter Search Term
-    Input Text  id=twotabsearchtextbox  Maisto 1:24 Scale Assembly Line Ferrari 458 Italia
+    Input Text  id=twotabsearchtextbox  "${SEARCH_TERM}
 
 Submit Search
     Click Button  xpath=//*[@id="nav-search"]/form/div[2]/div/input  # Click Search

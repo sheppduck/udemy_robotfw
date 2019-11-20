@@ -1,10 +1,9 @@
 *** Settings ***
 Documentation
 Library  SeleniumLibrary
-
 *** Keywords ***
 Verify Search Completed
-    Wait Until Page Contains  results for "${SEARCH_TERM}"
+    Wait Until Page Contains  Maisto 1:24 Scale Assembly Line Ferrari 458 Italia
 
 Click Product Link
     [Documentation]  Clicks on the first product in the search
